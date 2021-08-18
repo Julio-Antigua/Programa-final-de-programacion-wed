@@ -51,18 +51,6 @@ if($_POST){
             <label for="">Comentario:</label>
             <textarea class='form-control' name="comentario" id="comentario" placeholder="Comentario"  cols="5" rows="3"></textarea>
             </div><br>
-            <div class="form-group">
-            <label for="">Cantidad de Lavadoras:</label>
-            <input type="text" name="cantidad" id="cantidad" class="form-control" placeholder="Cantidad" autofocus>
-            </div><br>
-            <div class="form-group">
-            <label for="">Valor de la Carga:</label>
-            <input type="text" name="valor" id="valor" class="form-control" placeholder="Valor carga" autofocus>
-            </div><br>
-            <div class="form-group">
-            <label for="">Peso total de la Carga:</label>
-            <input type="text" name="peso" id="peso" class="form-control" placeholder="Peso total" autofocus>
-            </div><br>
 
       </div>
       <div class="modal-footer">

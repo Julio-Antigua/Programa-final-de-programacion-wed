@@ -2,6 +2,7 @@
 require('libreria/motores.php'); 
 require('NuevoCamion.php'); 
 require('EliminarCamion.php'); 
+ 
 
 plantilla::aplicar("Administracion de Camiones y Lavadoras...");
 
@@ -11,7 +12,9 @@ $usr = getUser(true);
 
 <div class="text-left">
     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#crearCamion"><i class="fa fa-plus"></i> Registrar Camion</button>
-</div><br>
+</div>
+
+<br>
 
 <table class="table">
     <thead>
@@ -28,15 +31,20 @@ $usr = getUser(true);
     </thead>
     <tbody>
     <?php 
+
             $sql = "SELECT * FROM camiones WHERE Usuario_Id = '{$usr->Id}' ";
+            
+          
             $datos = dbx::consulta($sql);
           
            
-            
+        
             foreach($datos as $fila){
+                
 
                 echo <<<FILA
                     <tr>
+                   
                         <td>{$fila->Id}</td>
                         <td>{$fila->Marca}</td>
                         <td>{$fila->Modelo}</td>
@@ -48,6 +56,7 @@ $usr = getUser(true);
                         <td>
                         <a href='EditarCamion.php?id={$fila->Id}' class="btn btn-primary"  ><i class="fas fa-pencil-alt"></i> Editar</a>
                         <a href='EliminarCamion.php?id={$fila->Id}' class="btn btn-danger"><i class="fas fa-trash-alt"></i> Eliminar</a>
+                        <a href='Lavadoras.php?id={$fila->Id}' class="btn btn-success" ><i class="fas fa-plus"></i> Lavadoras</a>
                         </td>
                     </tr>
             FILA;

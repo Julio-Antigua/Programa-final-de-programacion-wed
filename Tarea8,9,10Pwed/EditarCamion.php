@@ -69,7 +69,7 @@ function asgInput($id, $label, $placeholder, $valor, $extra=[]){
 
                     
                   
-<form action="" method="post" enctype="multipart/form-data">
+<form action="" method="post" >
 
 <?php 
     foreach($datos as $fila){
