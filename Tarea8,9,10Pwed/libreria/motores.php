@@ -3,7 +3,7 @@
     session_start();
 
     function my_password($pwds){
-        return md5("{$pwds}algomuydificildeadivinar, para que los dics de md5 se confundan con fundas");
+        return md5("{$pwds}no se puede leer");
     }
 
     function getUser($redirect = false){

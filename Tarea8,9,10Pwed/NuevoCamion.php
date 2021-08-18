@@ -37,7 +37,7 @@ if($_POST){
       
             <div class="form-group">
             <label for="">Marca:</label>
-            <input type="text" name="marca" id="marca" class="form-control" placeholder="Marca del camion" autofocus>
+            <input type="text" name="marca" id="marca" class="form-control"  placeholder="Marca del camion" autofocus>
             </div><br>
             <div class="form-group">
             <label for="">Modelo:</label>

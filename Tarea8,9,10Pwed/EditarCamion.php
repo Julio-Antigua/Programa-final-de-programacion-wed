@@ -111,9 +111,6 @@ function asgInput($id, $label, $placeholder, $valor, $extra=[]){
     asgInput('Modelo','Modelo','Modelo del Camion','');
     asgInput('Color','Color','Color del Camion','');
     asgInput('Comentario','Comentario','Comentario','',['type'=>'textarea']);
-    asgInput('CantidadLavadoras','CantidadLavadoras','Cantidad de Lavadoras','');
-    asgInput('ValorCarga','ValorCarga','Valor de la Carga','');
-    asgInput('PesoTotal','PesoTotal','Peso total de la Carga ','');
 
 ?>
 <br>
